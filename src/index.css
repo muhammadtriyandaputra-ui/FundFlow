@@ -1,0 +1,38 @@
+/* Google Fonts harus paling atas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-tosca: #14B8A6;
+  --color-tosca-dark: #0F766E;
+  --color-tosca-light: #CCFBF1;
+}
+
+body {
+  font-family: var(--font-body);
+  @apply bg-slate-50 text-slate-800;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
